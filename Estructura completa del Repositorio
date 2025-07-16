@@ -1,0 +1,38 @@
+/sigac
+│
+├── /backend                 # Django + API REST
+│   ├── /sigac_core          # Proyecto Django principal
+│   │   ├── /settings        # Configuraciones (dev/prod)
+│   │   ├── /api             # Endpoints REST (agricultura, municipio)
+│   │   └── /models          # Modelos de DB (Productor, Cultivo, Reclamo)
+│   ├── requirements.txt     # Dependencias Python (Django, DRF, psycopg2)
+│   └── manage.py            # CLI de Django
+│
+├── /frontend                # React.js + Vite
+│   ├── /public              # Assets estáticos (img, favicon)
+│   ├── /src                 # Código fuente
+│   │   ├── /components      # Componentes reutilizables (Navbar, CardProductor)
+│   │   ├── /pages           # Vistas (Home, Agro, Municipio)
+│   │   └── App.jsx          # Router principal
+│   ├── package.json         # Dependencias NPM (react, leaflet, axios)
+│   └── vite.config.js       # Configuración de Vite
+│
+├── /mobile                  # React Native
+│   ├── /components          # UI móvil (MapaOffline, FormTrueque)
+│   ├── App.js               # Punto de entrada
+│   └── app.json             # Config Expo
+│
+├── /docs                    # Documentación
+│   ├── manual-usuario.md    # Guía paso a paso en español
+│   ├── api.md               # Especificación de endpoints
+│   └── arquitectura.drawio  # Diagrama de arquitectura
+│
+├── /scripts                 # Automatización
+│   ├── deploy.sh            # Script para deploy en AWS/Linode
+│   └── migrate_db.sh        # Migraciones de PostgreSQL
+│
+├── .gitignore               # Archivos excluidos (node_modules, .env, __pycache__)
+├── LICENSE                  # Licencia MIT (o Apache 2.0)
+├── README.md                # Portada del proyecto (con badges)
+├── CONTRIBUTING.md          # Guía para colaboradores
+└── ROADMAP.md               # Hitos y cronograma (Fases 1-3)
